@@ -1,0 +1,17 @@
+# 10 - Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre seu peso ideal,
+# Utilizando as seguintes fórmulas ( onde 'h' corresponde a altura
+# Homens: (72.7 * h) - 58
+# Mulheres: (62.1 + h) - 44.7
+
+h = float(input('Informe a sua altura: '))
+s = input('Informe o seu sexo: (M) para masculino ou (F) para Feminino ')
+
+sexo = s.lower()
+
+if (sexo == 'm'):
+    p = (72.7 * h) - 58
+
+else:
+    p = (62.1 * h) - 44.7
+
+print(f'Seu peso ideal é {p}')
